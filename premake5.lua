@@ -103,6 +103,7 @@ project "Sandbox"
 	{
 		"Hazel/vendor/spdlog/include",
 		"Hazel/src",
+		"Hazel/vendor",
 		IncludeDirs["glm"]
 	}
 
