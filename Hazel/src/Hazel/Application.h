@@ -7,6 +7,8 @@
 #include "Hazel/LayerStack.h"
 #include "Renderer/Shader.h"
 
+#include "Renderer/Buffer.h"
+
 #include "ImGui/ImGuiLayer.h"
 
 namespace Hazel
@@ -33,8 +35,11 @@ namespace Hazel
 		LayerStack m_LayerStack;
 		ImGuiLayer* m_ImGuiLayer;
 
-		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+		unsigned int m_VertexArray;
 		Shader* m_Shader;
+
+		VertexBuffer* m_VertexBuffer;
+		IndexBuffer* m_IndexBuffer;
 
 		static Application* s_Instance;
 	};
